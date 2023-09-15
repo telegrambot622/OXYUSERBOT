@@ -30,27 +30,7 @@
             "description": "pyrogram v1.4 string session here",
             "required": false
         },
-        "SESSION6": {
-            "description": "pyrogram v1.4 string session here",
-            "required": false
-        },
-        "SESSION7": {
-            "description": "pyrogram v1.4 string session here",
-            "required": false
-        },
-        "SESSION8": {
-            "description": "pyrogram v1.4 string session here",
-            "required": false
-        },
-        "SESSION9": {
-            "description": "pyrogram v1.4 string session here",
-            "required": false
-        },
-        "SESSION10": {
-            "description": "pyrogram v1.4 string session here",
-            "required": false
-        },
-        "ALIVE_PIC": {
+        "EXTRA_IMG": {
             "required": false
         },
         "SUDO_USERS": {

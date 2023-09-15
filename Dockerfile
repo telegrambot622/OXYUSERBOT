@@ -1,4 +1,4 @@
-FROM python:3.11.4
+FROM nikolaik/python:python3.11
 
 RUN apt-get update -y && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends ffmpeg \
@@ -11,4 +11,4 @@ WORKDIR /app/
 
 RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
 
-CMD python3 main.py
+CMD python3 -m AltSpam
