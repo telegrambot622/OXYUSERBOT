@@ -9,7 +9,7 @@ from data import RAID, THE_ALTS
 from config import SUDO_USERS
 
 
-__MODULE__ = "Dᴍ"
+__NAME__ = "Dᴍ"
 __HELP__ = """
 !dmraid - raid in dm of any user
 

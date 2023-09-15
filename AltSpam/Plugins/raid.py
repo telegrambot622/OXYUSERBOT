@@ -10,7 +10,7 @@ from config import OWNER_ID, SUDO_USERS
 
 
 
-__MODULE__ = "Rᴀɪᴅ"
+__NAME__ = "Rᴀɪᴅ"
 __HELP__ = """
 !raid - raid on any user
 

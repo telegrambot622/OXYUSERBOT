@@ -9,7 +9,7 @@ from config import SUDO_USERS
 from data import GROUP, PORM
 
 
-__MODULE__ = "Sᴘᴀᴍ"
+__NAME__ = "Sᴘᴀᴍ"
 __HELP__ = """
 !spam - spam messages 
 
@@ -18,8 +18,9 @@ __HELP__ = """
 !hang - hang any group or inbox
 """
 
+GC = 1
 
-@Client.on_message(filters.command(["spam"], [".", "!", "/"]) & filters.user(SUDO_USERS))
+@Client.on_message(filters.command(["spam"], [".", "!", "/"]) & filters.user(SUDO_USERS), group=GC)
 async def altspam(xspam: Client, message: Message):
     alt = message.text.split(" ", 2)
     if  len(alt) == 3:
@@ -47,7 +48,7 @@ async def altspam(xspam: Client, message: Message):
         await message.reply_text(f"😈 **ᴜsᴀɢᴇ:**\n\n» !spam 13 Altron\n» !spam 13 <ʀᴇᴘʟʏ ᴛᴏ ᴛᴇxᴛ>\n\n**To do spam with replying to a user:**\n» !spam 13 Altron <ʀᴇᴘʟʏ ᴛᴏ ᴜꜱᴇʀ>")
 
 
-@Client.on_message(filters.command(["pspam", "pornspam"], [".", "/", "!"]) & filters.user(SUDO_USERS))
+@Client.on_message(filters.command(["pspam", "pornspam"], [".", "/", "!"]) & filters.user(SUDO_USERS), group=GC)
 async def pspam(xspam: Client, message: Message):
     cid = message.chat.id
     if int(cid) in GROUP:
@@ -65,7 +66,7 @@ async def pspam(xspam: Client, message: Message):
         await message.reply_text(f"🔞 **ᴜsᴀɢᴇ:**  !pspam 13")
 
 
-@Client.on_message(filters.command(["hang"], ["/", "!", "."]) & filters.user(SUDO_USERS))
+@Client.on_message(filters.command(["hang"], ["/", "!", "."]) & filters.user(SUDO_USERS), group=GC)
 async def hang(xspam: Client, message: Message): 
     alt = message.text.split(" ")
     if len(alt) == 1:

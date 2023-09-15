@@ -9,7 +9,7 @@ from pyrogram import Client, filters, __version__ as pyrover
 from pyrogram.types import Message
 
 
-__MODULE__ = "Aʟɪᴠᴇ"
+__NAME__ = "Aʟɪᴠᴇ"
 __HELP__ = """
 !ping - get ping of userbot
 

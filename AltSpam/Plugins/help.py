@@ -5,14 +5,14 @@ import re
 import traceback
 from AltSpam import app, one, two, __Version__
 from AltSpam.Helpers import page_load, inline_wrapper
-from config import HELPABLE, SUDO_USERS
+from config import HELPABLE, SUDO_USERS, EXTRA_IMG
 from pyrogram import Client, filters, __version__ as pyrover
 from pyrogram.errors import ChatWriteForbidden, UserBannedInChannel
 from pyrogram.types import Message, InputTextMessageContent, InlineQueryResultArticle, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InlineQuery
 from sys import version as pyver
 
 
-__MODULE__ = "Hᴇʟᴘ"
+__NAME__ = "Hᴇʟᴘ"
 __HELP__ = """
 !help - get help menu 
 """
@@ -52,7 +52,7 @@ async def help_button(_, query: CallbackQuery):
         try:
             module = mod_match.group(1)
             text = (
-                "**{} --{}--** :\n".format("Hᴇʟᴘ Fᴏʀ", HELPABLE[module].__MODULE__)
+                "**{} --{}--** :\n".format("Hᴇʟᴘ Fᴏʀ", HELPABLE[module].__NAME__)
                 + HELPABLE[module].__HELP__
             )
             key = InlineKeyboardMarkup([[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="back")]])
@@ -183,3 +183,18 @@ async def func_help(_, message: Message):
             await message.reply_text(f"Inline Help Menu Not Supported In This Chat Go To Bot's Dm For Help Menu @{app.username}")
             print(e)
 
+
+
+@app.on_message(filters.command(["start", "help"]) & filters.private)
+async def start_cmd(_, msg: Message):
+    try:
+        await msg.delete()
+    except:
+        pass
+    buttons = InlineKeyboardMarkup(page_load(0, HELPABLE, "help"))
+    await msg.reply_photo(
+        photo=EXTRA_IMG,
+        caption=HMH,
+        reply_markup=buttons
+    )
+    
