@@ -9,7 +9,7 @@ from config import SUDO_USERS
 from data import GROUP, PORM
 
 
-__MODULE__ = "Spam"
+__MODULE__ = "Sᴘᴀᴍ"
 __HELP__ = """
 !spam - spam messages 
 
