@@ -12,7 +12,7 @@ from pyrogram.types import Message, InputTextMessageContent, InlineQueryResultAr
 from sys import version as pyver
 
 
-__MODULE__ = "Help"
+__MODULE__ = "Hᴇʟᴘ"
 __HELP__ = """
 !help - get help menu 
 """
@@ -32,12 +32,12 @@ def private_panel():
 
 TXT = f"ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴩ !\n\n๏ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : [/,  !,  .]" 
 
-QA = "Make Your Own Alt Spam Userbot \n\n\nCopyright By @TheAltron\nMade By @ExoticHero"
+QA = "ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ᴀʟᴛ sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ \n\n\nᴄᴏᴘʏʀɪɢʜᴛ ʙʏ @TheAltron\nᴍᴀᴅᴇ ʙʏ @ExoticHero"
 
 HMH = f"""
-Alt Spam ᴠᴇʀsɪᴏɴ ⊱ `{__Version__}`
-ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ ⊱ `{pyver.split()[0]}`
-ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ ⊱ `{pyrover}`
+ᴀʟᴛ sᴘᴀᴍ ᴠᴇʀsɪᴏɴ : `{__Version__}`
+ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : `{pyver.split()[0]}`
+ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ : `{pyrover}`
 
 **ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.**"""
 
