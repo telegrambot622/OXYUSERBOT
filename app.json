@@ -1,51 +1,50 @@
 {
-    "name": "THE X SPAM",
+    "name": "ALT SPAM",
     "logo": "https://te.legra.ph/file/07d39b85c6cea32f15259.jpg",
-    "keywords": [
-      "telegram",
-      "bot",
-      "Altron"
-    ],
-      "buildpacks": [{
-      "url": "heroku/python"
-    }],
+    "keywords": ["telegram", "bot", "Altron"],
+    "buildpacks": [{"url": "heroku/python"}],
     "env": {
-        "SESSION": {
-            "description": "pyrogram v1.4 string session here",
+        "SESSION1": {
+            "description": "pyrogram v2.0 string session here",
             "required": true
         },
         "SESSION2": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0 string session here",
             "required": false
         },
         "SESSION3": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0 string session here",
             "required": false
         },
         "SESSION4": {
-            "description": "pyrogram v1.4 string session here",
+            "description": "pyrogram v2.0 string session here",
             "required": false
         },
         "SESSION5": {
-            "description": "pyrogram v1.4 string session here",
-            "required": false
-        },
-        "EXTRA_IMG": {
+            "description": "pyrogram v2.0 string session here",
             "required": false
         },
         "SUDO_USERS": {
-            "description": "Sudo Users ID",
+            "description": "Sudo Users ID here",
             "required": false
         },
         "API_ID": {
             "description": "telegram api id here",
-            "required": false
+            "required": true
         },
         "API_HASH": {
             "description": "telegram api hash here",
-            "required": false
+            "required": true
         },
         "OWNER_ID": {
+            "required": true
+        },
+        "LOG_GROUP_ID": {
+            "description": "Fill your log group id here",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Fill your bot token here",
             "required": true
         },
         "HEROKU_APP_NAME": {
