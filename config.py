@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 from data import THE_ALTS
 
 
-if path.exists("local.env"):
-    load_dotenv("local.env")
+if path.exists(".env"):
+    load_dotenv(".env")
     
 #----------------------------------- REQUIRED --------------------------------------#
 
