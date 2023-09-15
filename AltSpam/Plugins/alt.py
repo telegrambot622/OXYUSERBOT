@@ -7,7 +7,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 
-__MODULE__ = "Alt"
+__MODULE__ = "Aʟᴛ"
 __HELP__ = """
 !join - join public or private group
 
