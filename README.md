@@ -26,7 +26,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━
 
 
-# Pʏʀᴏɢʀᴀᴍ (V1.4) Sᴇssɪᴏɴ Sᴛʀɪɴɢ
+# Pʏʀᴏɢʀᴀᴍ (V2.0) Sᴇssɪᴏɴ Sᴛʀɪɴɢ
 
 - [BᴏᴛLɪɴᴋ](https://t.me/SessionStringGeneratorRobot)
 
