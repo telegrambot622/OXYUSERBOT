@@ -20,7 +20,7 @@ from AltSpam.Helpers import Pastebin
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
 
-__MODULE__ = "Owner"
+__MODULE__ = "Oᴡɴᴇʀ"
 __HELP__ = """
 ⊱ /usage : sʜᴏᴡs ᴛʜᴇ ᴅʏɴᴏ ᴜsᴀɢᴇ ᴏғ ᴛʜᴇ ᴍᴏɴᴛʜ.
 
