@@ -15,6 +15,7 @@ __HELP__ = """
 
 !alive - get alive message of userbot and bot too
 
+!start - start cmd for userbot and bot
 """
 
 

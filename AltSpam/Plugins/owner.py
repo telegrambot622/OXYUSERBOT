@@ -22,19 +22,19 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 
 __NAME__ = "Oᴡɴᴇʀ"
 __HELP__ = """
-⊱ /usage : sʜᴏᴡs ᴛʜᴇ ᴅʏɴᴏ ᴜsᴀɢᴇ ᴏғ ᴛʜᴇ ᴍᴏɴᴛʜ.
+!usage : sʜᴏᴡs ᴛʜᴇ ᴅʏɴᴏ ᴜsᴀɢᴇ ᴏғ ᴛʜᴇ ᴍᴏɴᴛʜ.
 
-⊱ /getvar : ɢᴇᴛ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ғʀᴏᴍ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ
+!getvar : ɢᴇᴛ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ғʀᴏᴍ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ
 
-⊱ /delvar : ᴅᴇʟᴇᴛᴇ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ᴏɴ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ
+!delvar : ᴅᴇʟᴇᴛᴇ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ᴏɴ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ
 
-⊱ /setvar [ᴠᴀʀ ɴᴀᴍᴇ] [ᴠᴀʟᴜᴇ] : sᴇᴛ ᴏʀ ᴜᴩᴅᴀᴛᴇ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ᴏɴ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ
+!setvar [ᴠᴀʀ ɴᴀᴍᴇ] [ᴠᴀʟᴜᴇ] : sᴇᴛ ᴏʀ ᴜᴩᴅᴀᴛᴇ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ᴏɴ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ
 
-⊱ /reboot : ʀᴇʙᴏᴏᴛ ʏᴏᴜʀ ʙᴏᴛ
+!reboot : ʀᴇʙᴏᴏᴛ ʏᴏᴜʀ ʙᴏᴛ
 
-⊱ /update : ᴜᴩᴅᴀᴛᴇ ᴛʜᴇ ʙᴏᴛ ғʀᴏᴍ ᴛʜᴇ ᴜᴩsᴛʀᴇᴀᴍ ʀᴇᴩᴏ
+!update : ᴜᴩᴅᴀᴛᴇ ᴛʜᴇ ʙᴏᴛ ғʀᴏᴍ ᴛʜᴇ ᴜᴩsᴛʀᴇᴀᴍ ʀᴇᴩᴏ
 
-⊱ /logs [ɴᴜᴍʙᴇʀ ᴏғ ʟɪɴᴇs] : ɢᴇᴛ ʟᴏɢs ᴏғ ʏᴏᴜʀ ʙᴏᴛ 
+!logs [ɴᴜᴍʙᴇʀ ᴏғ ʟɪɴᴇs] : ɢᴇᴛ ʟᴏɢs ᴏғ ʏᴏᴜʀ ʙᴏᴛ 
 """
 
 
@@ -45,7 +45,7 @@ async def is_heroku():
     return "heroku" in socket.getfqdn()
 
 
-@Client.on_message(filters.command(["logs", "getlog", "log"]) & filters.user(OWNER_ID))
+@Client.on_message(filters.command(["logs", "getlog", "log"], ["/", ".", "!"]) & filters.user(OWNER_ID))
 async def log_(_, message: Message):
     try:
         await message.delete()
@@ -88,7 +88,7 @@ async def log_(_, message: Message):
             return await message.reply_text("ʏᴏᴜ ᴄᴀɴ ᴏɴʟʏ ɢᴇᴛ ʟᴏɢs ᴏꜰ ʜᴇʀᴏᴋᴜ ᴀᴘᴘs.")
 
 
-@Client.on_message(filters.command(["getvar"]) & filters.user(OWNER_ID) & ~filters.forwarded)
+@Client.on_message(filters.command(["getvar"], ["/", ".", "!"]) & filters.user(OWNER_ID) & ~filters.forwarded)
 async def varget_(_, message: Message):
     try:
         await message.delete()
@@ -117,7 +117,7 @@ async def varget_(_, message: Message):
             return await message.reply_text(f"**{check_var}:** `{str(output)}`")
 
 
-@Client.on_message(filters.command(["delvar"]) & filters.user(OWNER_ID) & ~filters.forwarded)
+@Client.on_message(filters.command(["delvar"], ["/", ".", "!"]) & filters.user(OWNER_ID) & ~filters.forwarded)
 async def vardel_(_, message: Message):
     try:
         await message.delete()
@@ -148,7 +148,7 @@ async def vardel_(_, message: Message):
             os.system(f"kill -9 {os.getpid()} && python3 -m AltSpam")
 
 
-@Client.on_message(filters.command(["setvar"]) & filters.user(OWNER_ID) & ~filters.forwarded)
+@Client.on_message(filters.command(["setvar"], ["/", ".", "!"]) & filters.user(OWNER_ID) & ~filters.forwarded)
 async def set_var(_, message: Message):
     try:
         await message.delete()
@@ -180,7 +180,7 @@ async def set_var(_, message: Message):
         os.system(f"kill -9 {os.getpid()} && python3 -m AltSpam")
 
 
-@Client.on_message(filters.command(["usage"]) & filters.user(OWNER_ID) & ~filters.forwarded)
+@Client.on_message(filters.command(["usage"], ["/", ".", "!"]) & filters.user(OWNER_ID) & ~filters.forwarded)
 async def usage_dynos(_, message: Message):
     try:
         await message.delete()
@@ -239,7 +239,7 @@ async def usage_dynos(_, message: Message):
     return await dyno.edit(text)
 
 
-@Client.on_message(filters.command(["update", "gitpull"]) & filters.user(OWNER_ID) & ~filters.forwarded)
+@Client.on_message(filters.command(["update", "gitpull"], ["/", ".", "!"]) & filters.user(OWNER_ID) & ~filters.forwarded)
 async def update_(_, message: Message):
     try:
         await message.delete()
@@ -310,7 +310,7 @@ async def update_(_, message: Message):
         exit()
 
 
-@Client.on_message(filters.command(["reboot"]) & filters.user(OWNER_ID) & ~filters.forwarded)
+@Client.on_message(filters.command(["reboot"], ["/", ".", "!"]) & filters.user(OWNER_ID) & ~filters.forwarded)
 async def reboot_(_, message: Message):
     try:
         await message.delete()
