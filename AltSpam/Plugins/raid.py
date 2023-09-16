@@ -12,11 +12,11 @@ from config import OWNER_ID, SUDO_USERS
 
 __NAME__ = "Rᴀɪᴅ"
 __HELP__ = """
-⊱ `raid` : raid on any user
+⊱ `raid` : ʀᴀɪᴅ ᴏɴ ᴀɴʏ ᴜsᴇʀ
 
-⊱ `rraid` : reply raid on any user
+⊱ `rraid` : ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ ᴀɴʏ ᴜsᴇʀ
 
-⊱ `draid` : delete raid on any user
+⊱ `draid` : ᴅᴇʟᴇᴛᴇ ʀᴀɪᴅ ᴏɴ ᴀɴʏ ᴜsᴇʀ
 """
 
 
