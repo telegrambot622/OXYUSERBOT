@@ -11,11 +11,11 @@ from pyrogram.types import Message
 
 __NAME__ = "Aʟɪᴠᴇ"
 __HELP__ = """
-⊱ `ping` : get ping of userbot
+⊱ `ping` : ɢᴇᴛ ᴘɪɴɢ ᴏғ ᴜsᴇʀʙᴏᴛ
 
-⊱ `alive` : get alive message of userbot and bot too
+⊱ `alive` : ɢᴇᴛ ᴀʟɪᴠᴇ ᴍᴇssᴀɢᴇ ᴏғ ᴜsᴇʀʙᴏᴛ ᴀɴᴅ ʙᴏᴛ ᴛᴏᴏ
 
-⊱ `start` : start cmd for userbot and bot
+⊱ `start` : sᴛᴀʀᴛ ᴄᴍᴅ ғᴏʀ ʙᴏᴛ
 """
 
 
