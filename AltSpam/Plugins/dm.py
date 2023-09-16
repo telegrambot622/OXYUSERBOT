@@ -11,9 +11,9 @@ from config import SUDO_USERS
 
 __NAME__ = "Dᴍ"
 __HELP__ = """
-⊱ `dmraid` : raid in dm of any user
+⊱ `dmraid` : ʀᴀɪᴅ ɪɴ ᴅᴍ ᴏғ ᴀɴʏ ᴜsᴇʀ
 
-⊱ `dmspam` : spam in dm of any user
+⊱ `dmspam` : sᴘᴀᴍ ɪɴ ᴅᴍ ᴏғ ᴀɴʏ ᴜsᴇʀ
 """
 
 
