@@ -11,11 +11,11 @@ from data import GROUP, PORM
 
 __NAME__ = "Sᴘᴀᴍ"
 __HELP__ = """
-!spam - spam messages 
+⊱ `spam` : spam messages 
 
-!pspam - spam porn video and photos
+⊱ `pspam` : spam porn video and photos
 
-!hang - hang any group or inbox
+⊱ `hang` : hang any group or inbox
 """
 
 GC = 1

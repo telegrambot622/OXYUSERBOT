@@ -8,13 +8,13 @@ from AltSpam.Helpers import page_load, inline_wrapper
 from config import HELPABLE, SUDO_USERS, EXTRA_IMG
 from pyrogram import Client, filters, __version__ as pyrover
 from pyrogram.errors import ChatWriteForbidden, UserBannedInChannel
-from pyrogram.types import Message, InputTextMessageContent, InlineQueryResultArticle, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InlineQuery
+from pyrogram.types import Message, InputTextMessageContent, InlineQueryResultPhoto, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InlineQuery
 from sys import version as pyver
 
 
 __NAME__ = "Hᴇʟᴘ"
 __HELP__ = """
-!help - get help menu 
+⊱ `help` : get help menu of userbot and bot
 """
 
 
@@ -30,9 +30,9 @@ def private_panel():
     return buttons
 
 
-TXT = f"ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴩ !\n\n๏ ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : [/,  !,  .]" 
+TXT = f"ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴩ !" 
 
-QA = "ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ᴀʟᴛ sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ \n\n\nᴄᴏᴘʏʀɪɢʜᴛ ʙʏ @TheAltron\nᴍᴀᴅᴇ ʙʏ @ExoticHero"
+QA = "ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ᴀʟᴛ sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ \n\n\nᴄᴏᴘʏʀɪɢʜᴛ ʙʏ @TheAltron\nᴄᴏᴅᴇ ʙʏ @ExoticHero"
 
 HMH = f"""
 ᴀʟᴛ sᴘᴀᴍ ᴠᴇʀsɪᴏɴ : `{__Version__}`
@@ -52,7 +52,7 @@ async def help_button(_, query: CallbackQuery):
         try:
             module = mod_match.group(1)
             text = (
-                "**{} --{}--** :\n".format("Hᴇʟᴘ Fᴏʀ", HELPABLE[module].__NAME__)
+                "{} **--{}--** :\n\n".format("Aʟʟ Cᴏᴍᴍᴀɴᴅs Cᴀɴ Bᴇ Usᴇᴅ Wɪᴛʜ : `[/,  !,  .]`\n\nHᴇʟᴘ Fᴏʀ", HELPABLE[module].__NAME__)
                 + HELPABLE[module].__HELP__
             )
             key = InlineKeyboardMarkup([[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="back")]])
@@ -143,10 +143,13 @@ async def back(_, query: CallbackQuery):
 async def help_function(answers):
     bttn = page_load(0, HELPABLE, "help")
     answers.append(
-        InlineQueryResultArticle(
+        InlineQueryResultPhoto(
+            photo_url=EXTRA_IMG,
+            thumb_url=EXTRA_IMG,
             title="HELP MENU",
-            input_message_content=InputTextMessageContent(message_text=HMH),
+            caption=HMH,
             reply_markup=InlineKeyboardMarkup(bttn),
+            input_message_content=InputTextMessageContent(message_text=HMH)
         )
     )
     return answers
@@ -179,6 +182,7 @@ async def func_help(_, message: Message):
                 await two.send_inline_bot_result(chat, hero.query_id, hero.results[0].id)
         except (ChatWriteForbidden, UserBannedInChannel):
             print("ID is limited OR muted in the chat")
+            return
         except Exception as e:
             await message.reply_text(f"Inline Help Menu Not Supported In This Chat Go To Bot's Dm For Help Menu @{app.username}")
             print(e)

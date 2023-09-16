@@ -9,9 +9,11 @@ from pyrogram.types import Message
 
 __NAME__ = "Aʟᴛ"
 __HELP__ = """
-!join - join public or private group
+⊱ `join` : join public or private group
 
-!leave - leave public or private group
+⊱ `leave` : leave public or private group
+
+⊱ `stop` : stops the userbot from spamming
 """
 
 
