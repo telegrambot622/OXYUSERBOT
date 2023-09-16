@@ -39,10 +39,6 @@
         "OWNER_ID": {
             "required": true
         },
-        "LOG_GROUP_ID": {
-            "description": "Fill your log group id here",
-            "required": true
-        },
         "BOT_TOKEN": {
             "description": "Fill your bot token here",
             "required": true

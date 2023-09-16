@@ -20,7 +20,6 @@
 - `API_HASH`
 - `PYROGRAM SESSION (V2.0)`
 - `BOT_TOKEN`
-- `LOG GROUP ID`
 - `OWNER ID`
 
 ━━━━━━━━━━━━━━━━━━━━━━

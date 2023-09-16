@@ -14,7 +14,6 @@ API_HASH = getenv("API_HASH", None)
 SESSION1 = getenv("SESSION1", None)
 BOT_TOKEN = getenv("BOT_TOKEN", None)
 OWNER_ID = list(map(int, getenv("OWNER_ID", "5180447182 5518687442").split()))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
 
 
 #-------------------------------- OPTIONAL -------------------------------------#

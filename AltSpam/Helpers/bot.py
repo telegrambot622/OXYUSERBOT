@@ -1,8 +1,6 @@
-import sys
-from config import API_ID, API_HASH, BOT_TOKEN, LOG_GROUP_ID
+from config import API_ID, API_HASH, BOT_TOKEN
 from pyrogram import Client
 from AltSpam.logging import LOGGER
-
 
 
 class Bot(Client):
@@ -15,7 +13,6 @@ class Bot(Client):
             in_memory=True
         )
 
-
     async def start(self):
         await super().start()
         get_me = await self.get_me()
@@ -26,15 +23,7 @@ class Bot(Client):
         self.username = get_me.username
         self.mention = get_me.mention
         self.id = get_me.id
-        
-        await self.get_chat_member(LOG_GROUP_ID, self.id)
-        try:
-            LOGGER("AltSpam").info(f"Started As {self.name} !")
-            await self.send_message(LOG_GROUP_ID, f"**» ʙᴏᴛ sᴛᴀʀᴛᴇᴅ : {self.mention}**")
-        except:
-            LOGGER(__name__).error("Bot Has Failed To Access The Log Group !")
-            sys.exit()
-
+        LOGGER("AltSpam").info(f"Started As {self.name} !")
 
     async def stop(self):
         await super().stop()

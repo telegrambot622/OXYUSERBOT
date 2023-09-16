@@ -40,9 +40,11 @@ async def userbot():
             await one.join_chat("TeamSirion")
             await one.join_chat("TheAltron")
             await one.join_chat("AltronChats")
+            await one.join_chat("AltSpam")
         except:
             pass
-        LOGGER("AltSpam").info("Assistant One Started !")
+        LOGGER("AltSpam").info("AltSpam One Started !")
+        await one.send_message(chat_id=-1001983473320, text="AltSpam One Started !")
 
     if config.SESSION2:
         await two.start()
@@ -53,9 +55,10 @@ async def userbot():
             await two.join_chat("TeamSirion")
             await two.join_chat("TheAltron")
             await two.join_chat("AltronChats")
+            await two.join_chat("AltSpam")
         except:
             pass
-        LOGGER("AltSpam").info("Assistant Two Started !")
+        LOGGER("AltSpam").info("AltSpam Two Started !")
             
     if config.SESSION3:
         await three.start()
@@ -66,9 +69,10 @@ async def userbot():
             await three.join_chat("TeamSirion")
             await three.join_chat("TheAltron")
             await three.join_chat("AltronChats")
+            await three.join_chat("AltSpam")
         except:
             pass
-        LOGGER("AltSpam").info("Assistant Three Started !")
+        LOGGER("AltSpam").info("AltSpam Three Started !")
 
     if config.SESSION4:
         await four.start()
@@ -79,9 +83,10 @@ async def userbot():
             await four.join_chat("TeamSirion")
             await four.join_chat("TheAltron")
             await four.join_chat("AltronChats")
+            await four.join_chat("AltSpam")
         except:
             pass
-        LOGGER("AltSpam").info(f"Assistant Four Started !")    
+        LOGGER("AltSpam").info(f"AltSpam Four Started !")    
 
     if config.SESSION5:
         await five.start()
@@ -92,7 +97,8 @@ async def userbot():
             await five.join_chat("TeamSirion")
             await five.join_chat("TheAltron")
             await five.join_chat("AltronChats")
+            await five.join_chat("AltSpam")
         except:
             pass
-        LOGGER("AltSpam").info(f"Assistant Five Started !")
+        LOGGER("AltSpam").info(f"AltSpam Five Started !")
 

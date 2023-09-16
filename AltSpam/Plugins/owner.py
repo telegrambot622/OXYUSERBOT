@@ -299,10 +299,8 @@ async def update_(_, message: Message):
             )
         except Exception as err:
             await response.edit(f"{nrs.text}\n\nsᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ ᴡʜᴇɴ ᴛʀɪᴇᴅ ᴛᴏ ʀᴇsᴛᴀʀᴛ")
-            return await app.send_message(
-                config.LOG_GROUP_ID,
-                f"ᴀɴ ᴇxᴄᴇᴩᴛɪᴏɴ ᴏᴄᴄᴜʀᴇᴅ ᴀᴛ #ᴜᴩᴅᴀᴛᴇʀ ᴅᴜᴇ ᴛᴏ: <code>{err}</code>",
-            )
+            print(err)
+            return
     else:
         await response.edit(f"{nrs.text}\n\nʙᴏᴛ ᴜᴩᴅᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ ! ɴᴏᴡ ᴡᴀɪᴛ ғᴏʀ ғᴇᴡ ᴍɪɴᴜᴛᴇs ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ ʀᴇsᴛᴀʀᴛs ᴀɴᴅ ᴩᴜsʜ ᴄʜᴀɴɢᴇs !")
         os.system("pip3 install -r requirements.txt")
