@@ -12,12 +12,12 @@ from data import OneWord
 
 __NAME__ = "Oᴡᴏʀᴅ"
 __HELP__ = """
-this is a feature in which userbot sends one word reply raid this feature has special command 
+ᴛʜɪs ɪs ᴀ ғᴇᴀᴛᴜʀᴇ ɪɴ ᴡʜɪᴄʜ ᴜsᴇʀʙᴏᴛ sᴇɴᴅs ᴏɴᴇ ᴡᴏʀᴅ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ ʜᴀs sᴘᴇᴄɪᴀʟ ᴄᴏᴍᴍᴀɴᴅ 
 
 
-slow one word ⊱ `[l0l, madarchod, randi]`
+sʟᴏᴡ ᴏɴᴇ ᴡᴏʀᴅ ⊱ `[l0l, madarchod, randi]`
 
-fast one word ⊱ `[fword, lund, behenchod, gay]`
+ғᴀsᴛ ᴏɴᴇ ᴡᴏʀᴅ ⊱ `[fword, lund, behenchod, gay]`
 """
 
 FC = 2
@@ -54,8 +54,8 @@ async def alt_mkc(xspam: Client, message: Message):
     
 @Client.on_message(filters.command(["stop"], ["", ".", "!", "/"]) & filters.user(SUDO_USERS), group=FC)
 async def alt_stop(_, message: Message):    
-    reply = await message.reply_text("stopping...")
-    await reply.edit("stopped !!\nwait for 2 minutes")
+    reply = await message.reply_text("sᴛᴏᴘᴘɪɴɢ ...")
+    await reply.edit("sᴛᴏᴘᴘᴇᴅ !!\n\nᴡᴀɪᴛ ғᴏʀ 2 ᴍɪɴᴜᴛᴇs !!")
     os.system(f"kill -9 {os.getpid()} && python3 -m AltSpam")
     
     
