@@ -14,7 +14,7 @@ from sys import version as pyver
 
 __NAME__ = "Hᴇʟᴘ"
 __HELP__ = """
-⊱ `help` : get help menu of userbot and bot
+⊱ `help` : ɢᴇᴛ ʜᴇʟᴘ ᴍᴇɴᴜ ᴏғ ᴜsᴇʀʙᴏᴛ ᴀɴᴅ ʙᴏᴛ
 """
 
 
