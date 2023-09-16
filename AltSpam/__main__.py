@@ -2,10 +2,10 @@ import asyncio
 import importlib
 from pyrogram import idle
 from AltSpam import app
-from config import HELPABLE
+from config import HELPABLE, OWNER_ID
 from AltSpam.Plugins import ALL_MODULES
 from AltSpam.logging import LOGGER
-from AltSpam.Helpers import userbot
+from AltSpam.Helpers import userbot, one, two
 
 
 loop = asyncio.get_event_loop()
@@ -26,6 +26,12 @@ async def init():
     LOGGER("AltSpam").info("Necessary Modules Imported Successfully !")
     
     await userbot()
+    for owner in OWNER_ID:
+        try:
+            await one.send_message(chat_id=owner, text="AltSpam Started !!✅\n\nYou Can Get All Your Alt Spam ID's In @AltSpam")
+        except:
+            await two.send_message(chat_id=owner, text="AltSpam Started !!✅\n\nYou Can Get All Your Alt Spam ID's In @AltSpam")
+
     LOGGER("AltSpam").info("AltSpam Started Successfully !")
     await idle()
 

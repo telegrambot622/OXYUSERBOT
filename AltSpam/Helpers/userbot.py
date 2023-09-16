@@ -44,7 +44,6 @@ async def userbot():
         except:
             pass
         LOGGER("AltSpam").info("AltSpam One Started !")
-        await one.send_message(chat_id=-1001983473320, text="AltSpam One Started !")
 
     if config.SESSION2:
         await two.start()
