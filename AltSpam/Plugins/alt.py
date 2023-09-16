@@ -9,11 +9,11 @@ from pyrogram.types import Message
 
 __NAME__ = "Aʟᴛ"
 __HELP__ = """
-⊱ `join` : join public or private group
+⊱ `join` : ᴊᴏɪɴ ᴘᴜʙʟɪᴄ ᴏʀ ᴘʀɪᴠᴀᴛᴇ ɢʀᴏᴜᴘ
 
-⊱ `leave` : leave public or private group
+⊱ `leave` : ʟᴇᴀᴠᴇ ᴘᴜʙʟɪᴄ ᴏʀ ᴘʀɪᴠᴀᴛᴇ ɢʀᴏᴜᴘ
 
-⊱ `stop` : stops the userbot from spamming
+⊱ `stop` : sᴛᴏᴘs ᴛʜᴇ ᴜsᴇʀʙᴏᴛ ғʀᴏᴍ sᴘᴀᴍᴍɪɴɢ
 """
 
 
