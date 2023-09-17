@@ -1,6 +1,6 @@
 {
-    "name": "ALT SPAM",
-    "logo": "https://te.legra.ph/file/07d39b85c6cea32f15259.jpg",
+    "name": "𝐎𝐗𝐘𝐆𝐄𝐍 𝐔𝐒𝐄𝐑 𝐁𝐎𝐓",
+    "logo": "https://graph.org/file/b0825ba6490d2aa6a6afd.jpg",
     "keywords": ["telegram", "bot", "Altron"],
     "buildpacks": [{"url": "heroku/python"}],
     "env": {
