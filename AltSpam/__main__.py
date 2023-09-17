@@ -26,10 +26,10 @@ async def init():
     LOGGER("AltSpam").info("Necessary Modules Imported Successfully !")
     
     await userbot()
-    LOGGER("AltSpam").info("AltSpam Started Successfully !")
+    LOGGER("AltSpam").info("🦋⃟ ᴠ‌ɪ‌ᴘ‌ 🇴 🇽 𝐘 𝐆 𝐄 𝐍⃝⃝⃪⃕🥀🦋‌•─‌⃛≛⃝🦅 Started Successfully !")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("Sirion").info("Stopping AltSpam Bot !")
+    LOGGER("Sirion").info("Stopping  Bot !")
