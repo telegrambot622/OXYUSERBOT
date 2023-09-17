@@ -9,7 +9,7 @@ from pyrogram import Client, filters, __version__ as pyrover
 from pyrogram.types import Message
 
 
-__NAME__ = "™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍"
+__NAME__ = "ALIVE"
 __HELP__ = """
 ⊱ `ping` : ɢᴇᴛ ᴘɪɴɢ ᴏғ ᴜsᴇʀʙᴏᴛ
 
