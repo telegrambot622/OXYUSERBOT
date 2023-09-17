@@ -24,7 +24,7 @@ async def dmraid(xspam: Client, message: Message):
           ok = await xspam.get_users(alt[2])
           id = ok.id
           if id in THE_ALTS:
-                await message.reply_text(f"ᴠᴇʀɪғɪᴇᴅ ʙʏ ᴀʟᴛʀᴏɴ x !")
+                await message.reply_text(f"ᴠᴇʀɪғɪᴇᴅ ʙʏ ™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍 !")
           elif id in SUDO_USERS:
                 await message.reply_text(f"ᴛʜɪs ᴘᴇʀsᴏɴ ɪs ᴍʏ sᴜᴅᴏ ᴜsᴇʀ !")
           else:
@@ -41,7 +41,7 @@ async def dmraid(xspam: Client, message: Message):
           ok = await xspam.get_users(user_id)
           id = ok.id
           if id in THE_ALTS:
-                await message.reply_text(f"ᴠᴇʀɪғɪᴇᴅ ʙʏ ᴀʟᴛʀᴏɴ x !")
+                await message.reply_text(f"ᴠᴇʀɪғɪᴇᴅ ™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍 !")
           elif id in SUDO_USERS:
                 await message.reply_text(f"ᴛʜɪs ᴘᴇʀsᴏɴ ɪs ᴍʏ sᴜᴅᴏ ᴜsᴇʀ !")
           else:
@@ -63,7 +63,7 @@ async def dmspam(xspam: Client, message: Message):
     if  len(alt) == 4:
         uid = int(alt[2])
         if uid in THE_ALTS:
-            await message.reply_text(f"ᴠᴇʀɪғɪᴇᴅ ʙʏ ᴀʟᴛʀᴏɴ x !")
+            await message.reply_text(f"ᴠᴇʀɪғɪᴇᴅ ʙʏ ™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍 !")
         elif uid in SUDO_USERS:
             await message.reply_text(f"ᴛʜɪs ᴘᴇʀsᴏɴ ɪs ᴍʏ sᴜᴅᴏ ᴜsᴇʀ !")
         else:
@@ -76,7 +76,7 @@ async def dmspam(xspam: Client, message: Message):
     elif message.reply_to_message and (len(alt) == 3):
         id = message.reply_to_message.from_user.id
         if id in THE_ALTS:
-            await message.reply_text(f"ᴠᴇʀɪғɪᴇᴅ ʙʏ ᴀʟᴛʀᴏɴ x !")
+            await message.reply_text(f"™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 𝐍 !")
         elif id in SUDO_USERS:
             await message.reply_text(f"ᴛʜɪs ᴘᴇʀsᴏɴ ɪs ᴍʏ sᴜᴅᴏ ᴜsᴇʀ !")
         else:
@@ -88,4 +88,4 @@ async def dmspam(xspam: Client, message: Message):
                 await asyncio.sleep(0.3)
 
     else:
-        await message.reply_text("⚡ ᴜsᴀɢᴇ:\n\n!dmspam 13 <ᴜꜱᴇʀ ɪᴅ> Altron\n\n !dmspam 13 Altron <ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ>")
+        await message.reply_text("⚡ ᴜsᴀɢᴇ:\n\n!dmspam 13 <ᴜꜱᴇʀ ɪᴅ> Oxygen\n\n !dmspam 13 Altron <ʀᴇᴘʟʏ ᴛᴏ ᴜsᴇʀ>")
