@@ -5,7 +5,7 @@ The easiest way to deploy
 
 <p align="left">
   <a href="https://dashboard.heroku.com/new?template=https://github.com/PRADHAN474/OXYUSERBOT">
-    <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-cyan?style=for-the-badge&logo=heroku" width="220" height="38.45" alt="Deploy to Heroku">
+    <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45" alt="Deploy to Heroku">
   </a>
 </p>
 
@@ -26,4 +26,4 @@ For any assistance or queries, join our [™°‌ 🫧 🇴 🇽 𝐘 𝐆 𝐄 
 🔗 **Quick Links:**
 - [GitHub Repository](https://github.com/PRADHAN474/OXYUSERBOT)
 
-Enjoy deploying  with ease!
+Enjoy deploying with ease!
