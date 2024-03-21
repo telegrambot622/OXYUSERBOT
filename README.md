@@ -4,7 +4,7 @@ The easiest way to deploy
 ⚠️ **Don't forget to fork this repository. Errors may occur during deployment.**
 
 <p align="left">
-  <a href="https://dashboard.heroku.com/new?template=https://github.com/PRADHAN474/OXYUSERBOT">
+  <a href="https://dashboard.heroku.com/new?template=https://github.com/telegrambot622/OXYUSERBOT">
     <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-pink?style=for-the-badge&logo=heroku" width="220" height="38.45" alt="Deploy to Heroku">
   </a>
 </p>
